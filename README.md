@@ -10,7 +10,7 @@ If you want the keybinding to override all minor modes that may also bind the sa
 
     (bind-key* "<C-return>" 'other-window)
 
-If you want to rebind a key only in a particular key, use:
+If you want to rebind a key only for a particular mode, use:
 
     (bind-key "C-c x" 'my-ctrl-c-x-command some-other-mode-map)
 
@@ -22,4 +22,4 @@ After Emacs loads, you can see a summary of all your personal keybindings curren
 
     M-x describe-personal-keybindings
 
-This display will tell you if you've overriden a default keybinding, and what the default was.  Also, it will tell you if the key was rebound after your binding it with `bind-key`, and what it was rebound it to.
+It will tell you if you've overriden a default keybinding, and what that default was.  Also, it will tell you if the key was rebound after your binding it with `bind-key`, and what it was rebound it to.
